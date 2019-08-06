@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="car_server_k11_sync@mysql57.rdsm7gwoyphq7s0.rds.su.baidubce.com">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="car_server_k11_sync">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <table id="6" parent="2" name="enter_exits"/>
+    <column id="7" parent="6" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="8" parent="6" name="created_at">
+      <Position>2</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="9" parent="6" name="updated_at">
+      <Position>3</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="10" parent="6" name="car_plate">
+      <Position>4</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="11" parent="6" name="enter_track">
+      <Position>5</Position>
+      <DataType>varchar(1024)|0</DataType>
+    </column>
+    <column id="12" parent="6" name="exit_track">
+      <Position>6</Position>
+      <DataType>varchar(1024)|0</DataType>
+    </column>
+    <column id="13" parent="6" name="enter_image">
+      <Position>7</Position>
+      <DataType>varchar(1024)|0</DataType>
+    </column>
+    <column id="14" parent="6" name="exit_image">
+      <Position>8</Position>
+      <DataType>varchar(1024)|0</DataType>
+    </column>
+    <column id="15" parent="6" name="car_brand">
+      <Position>9</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="16" parent="6" name="car_model">
+      <Position>10</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="17" parent="6" name="enter_time">
+      <Position>11</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="18" parent="6" name="exit_time">
+      <Position>12</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="19" parent="6" name="stay_mins">
+      <Position>13</Position>
+      <DataType>int(10) unsigned|0</DataType>
+    </column>
+    <column id="20" parent="6" name="day">
+      <Position>14</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <index id="21" parent="6" name="idx_enter_exits_car_plate">
+      <ColNames>car_plate</ColNames>
+    </index>
+    <index id="22" parent="6" name="idx_enter_exits_day">
+      <ColNames>day</ColNames>
+    </index>
+    <index id="23" parent="6" name="idx_enter_exits_exit_time">
+      <ColNames>exit_time</ColNames>
+    </index>
+    <key id="24" parent="6" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

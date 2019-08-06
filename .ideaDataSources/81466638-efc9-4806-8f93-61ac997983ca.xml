@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mysql2hivemeta@bj-spark001.aibee.cn [2]">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mysql2hivemeta">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="aibee_flink_wsx"/>
+    <schema id="4" parent="1" name="azkaban"/>
+    <schema id="5" parent="1" name="dyc"/>
+    <schema id="6" parent="1" name="DYC"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="k11"/>
+    <schema id="9" parent="1" name="mysql"/>
+    <schema id="10" parent="1" name="performance_schema"/>
+    <schema id="11" parent="1" name="test"/>
+    <table id="12" parent="2" name="meta"/>
+    <table id="13" parent="2" name="meta_mysql2hive"/>
+    <column id="14" parent="12" name="mysqltable">
+      <Position>1</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="15" parent="12" name="hivetable">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="16" parent="12" name="hivepartition">
+      <Position>3</Position>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="17" parent="13" name="msl_dbase">
+      <Position>1</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="18" parent="13" name="msl_table">
+      <Position>2</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="19" parent="13" name="msl_user">
+      <Position>3</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="20" parent="13" name="msl_passwd">
+      <Position>4</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="21" parent="13" name="msl_host">
+      <Position>5</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="22" parent="13" name="hv_dbase">
+      <Position>6</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="23" parent="13" name="hv_table">
+      <Position>7</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="24" parent="13" name="hv_partition_doornot">
+      <Position>8</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="25" parent="13" name="hv_partition_choose">
+      <Position>9</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="26" parent="13" name="hv_partition_notadd_column">
+      <Position>10</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="27" parent="13" name="hv_partition_add_column">
+      <Position>11</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="28" parent="13" name="hv_partition_column_union">
+      <Position>12</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
